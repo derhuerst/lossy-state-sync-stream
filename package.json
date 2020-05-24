@@ -1,0 +1,39 @@
+{
+	"name": "lossy-state-sync-stream",
+	"description": "Synchronize state efficiently, over an unreliable connection.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"lib",
+		"example.js"
+	],
+	"keywords": [
+		"state",
+		"sync",
+		"udp",
+		"mosh",
+		"ssp",
+		"stream"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/lossy-state-sync-stream",
+	"repository": "derhuerst/lossy-state-sync-stream",
+	"bugs": "https://github.com/derhuerst/lossy-state-sync-stream/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=10"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"eslint": "^7.1.0",
+		"tap-min": "^2.0.0",
+		"tape": "^5.0.0"
+	},
+	"scripts": {
+		"test": "env NODE_ENV=dev node test/index.js | tap-min",
+		"lint": "eslint .",
+		"prepublishOnly": "npm test && npm run lint"
+	}
+}
