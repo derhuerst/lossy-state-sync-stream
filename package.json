@@ -32,6 +32,7 @@
 	},
 	"devDependencies": {
 		"eslint": "^7.1.0",
+		"simulate-network-conditions": "^1.0.0",
 		"tap-min": "^2.0.0",
 		"tape": "^5.0.0"
 	},
